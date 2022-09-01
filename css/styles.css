@@ -1,0 +1,657 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+/* body {
+    
+} */
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(6,auto);
+    grid-template-rows: repeat(5,auto); 
+    /* row-gap: 50px; */
+    /* grid-area: ""; */
+}
+.item1 {
+    grid-area: 1 / 2 / 2 /6;
+}
+.item2 {
+    grid-area: 1/1/5/2;
+}
+.item3 {
+    grid-area: 2/2/3/5;
+    margin-left: 103px;
+    margin-top: 30px;
+}
+.item4 {
+    grid-area: 2/5/4/6;
+    margin-left: 88px;
+    margin-top: 86px;
+    margin-right: 64px;
+}
+.item5A {
+    grid-area: 3/2/4/3;
+    margin-right: 20px;
+    margin-left: 64px;
+    margin-top: 90px;
+}
+.item5B{
+    grid-area: 3/3/4/4;
+    margin-right: 43px;
+    margin-top: 90px;
+}
+.item5C{
+    grid-area: 3/4/4/5;
+    margin-top: 90px;
+}
+.item6{
+    grid-area: 4/2/5/5;
+    margin-left: 59px;
+    margin-top: 50px;
+    margin-right: 93px;
+    margin-bottom: 81px;
+}
+.item7 {
+    grid-area: 4/5/5/6;
+    margin-top: 76px;
+    margin-right: 64px;
+    margin-left: 88px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 6px 0px rgba(39, 45, 59, 0.74);
+    height: 70px;
+}
+
+.navbar ul.menu-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar ul li {
+    padding: 21px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 86px;
+    margin-left: 71px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #272D3B;
+    /* transition: 0.2s; */
+}
+
+.navbar ul li a:hover {
+    /* box-shadow:  0 8px 0px #2D62ED inset,
+    78px 0 0 rgba(255,255,255,0.03) inset; */
+    padding: 15px 0px 20px 0px;
+    border-top: 6px solid #2D62ED;
+    /* width: 78px; */
+}
+
+.searchicon {
+    width: 340px;
+    background-color: #fff;
+    border-radius: 25px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding-left: 16px;
+
+}
+
+.searchicon>input {
+    flex: 1;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    margin-left: 16px;
+}
+
+.navbar .menu-icons img {
+    margin-right: 64px;
+}
+.navbar .menu-icons {
+    margin-left: 64px;
+}
+.navbar .searcandmenuicons{
+    display: flex;
+    
+}
+
+/* Side Menu */
+.aside-menu {
+    background: #2D62ED;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    padding-top: 50px;
+    width: 280px;
+}
+
+/* Menu logo */
+.aside-menu .logo-txt {
+    display: flex;
+    margin-left: 15px;
+}
+
+.aside-menu .logo-txt h2 {
+    color: #FFFFFF;
+    margin-left: 23px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* Menu Links */
+.aside-menu .menu-side {
+    margin-top: 130px;
+}
+
+.aside-menu .menu-side .menu-row {
+    display: flex;
+    align-items: center;
+    opacity: 0.5;
+    margin-top: 48px;
+    padding-left: 20px;
+}
+
+.aside-menu .menu-side .menu-row:active,
+.aside-menu .menu-side .menu-row:hover,
+.aside-menu .menu-side .menu-row:focus {
+    opacity: 1;
+    transition: 600ms ease-out;
+    box-shadow: 4px 0px 0px 0px #fff inset,
+        500px 0 0 rgba(255, 255, 255, 0.03) inset;
+    /* padding-left: 20PX; */
+
+}
+
+.aside-menu .menu-side .menu-row a:active,
+.aside-menu .menu-side .menu-row a:hover,
+.aside-menu .menu-side .menu-row a:focus {
+    font-weight: 700;
+}
+
+.aside-menu .menu-side .menu-row a {
+    margin-left: 32px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Side Menu Personal Account */
+
+.aside-menu .personal-account {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 440px;
+
+}
+
+.aside-menu .personal-account .personal-acount-txt h4 {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.aside-menu .personal-account .personal-acount-txt .pa-status {
+    display: flex;
+    align-items: center;
+}
+
+.aside-menu .personal-account .personal-acount-txt .pa-status h5 {
+    color: #fff;
+    opacity: 0.5;
+    margin-right: 15px;
+    font-weight: normal;
+
+}
+
+/* Big notification Widget */
+.big-notification {
+    display: flex;
+    box-shadow: 0px 1px 4px 0px rgba(39, 45, 59, 0.74);
+    width: 980px;
+    border-radius: 20px;
+    padding-bottom: 15px;
+    padding-right: 90px;
+}
+
+.big-notification .notificaton-txt {
+    padding-left: 64px;
+    padding-top: 30px;
+    margin-right: 180px;
+}
+
+.big-notification .notificaton-txt h2 {
+    font-size: 26px;
+    line-height: 35px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.big-notification .notificaton-txt p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #272D3B;
+    line-height: 30px;
+}
+
+.big-notification .notificaton-txt ul li {
+    text-align: left;
+    color: #272D3B;
+    font-size: 18px;
+    line-height: 30px;
+    list-style: none;
+}
+
+.big-notification .notificaton-txt ul li img {
+    margin-right: 10px;
+}
+
+/* Cards Section */
+.card1 {
+    background: #FF007C;
+    /* width: 380px; */
+    /* height: 180px; */
+    /* padding: 20px 25px; */
+    /* padding: 9px 42px -20px 42px; */
+    padding: 16px 16px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 1px 6px 0px rgba(39, 45, 59, 0.74);
+    
+}
+
+ .card1 .card1-img {
+    margin-bottom: -29px;
+}
+
+.card1 .card-txt-and-btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+ .card1 .card-txt-and-btn h4,
+ .card2 .card2-top h4,
+ .card3 .card2-top h4 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 37px;
+}
+
+ .card1 .card-txt-and-btn h5,
+ .card2 .card2-top h5,
+ .card3 .card2-top h5 {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+ .card2 {
+    background: #2D62ED;
+    width: 320px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 2px 6px 0px rgba(39, 45, 59, 0.74);
+}
+
+.card2-top {
+    /* text-align: center; */
+    margin-top: 16px;
+    /* float: left; */
+    /* clear: both; */
+    margin-left: 32px;
+}
+
+.image {
+    align-self: flex-end;
+    margin-right: 16px;
+    margin-bottom: 16px;
+
+}
+
+ .card3 {
+    background: #7D00B5;
+    width: 320px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 2px 6px 0px rgba(39, 45, 59, 0.74);
+}
+
+/* The upcoming section */
+.upcoming {
+    width: 380px;
+    height: 380px;
+    border-radius: 20px;
+    padding: 32px 16px 13px 16px;
+    position: relative;
+    box-shadow: 0px 1px 4px 0px rgba(39, 45, 59, 0.74);
+}
+
+.upcoming-bottom .upcoming1 .calender1 {
+    background-color: #39D5CF;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+}
+
+.upcoming-bottom .upcoming1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.upcoming-bottom .upcoming1 .calender2 {
+    background-color: #FF007C;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+}
+
+.upcoming-bottom .upcoming1 .calender3 {
+    background-color: #7D00B5;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+}
+
+.upcoming .upcoming-content .upcoming-top h3 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #272D3B;
+}
+
+.upcoming .upcoming-content .upcoming-top .today {
+    display: flex;
+    /* justify-content: space-between; */
+    margin-right: 16px;
+}
+
+.upcoming .upcoming-content .upcoming-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.upcoming .upcoming-content .upcoming-top .today p {
+    margin-right: 16px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.upcoming .btn {
+    /* align-items: flex-end; */
+    /* justify-content: end; */
+    /* float: right; */
+    position: absolute;
+    bottom: 9px;
+    left: 85%;
+
+}
+
+/* Order Table Section */
+.orders {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    box-shadow: 0px 1px 4px 0px rgba(39, 45, 59, 0.88);
+    /* margin: 50px 30px; */
+    border-radius: 20px;
+    width: fit-content;
+    height: 380px;
+    width: 1080PX;
+
+    
+}
+
+.orders .order-table .order-icon {
+    color: #272D3B;
+}
+
+.orders .table-head {
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    justify-content: space-between;
+    margin-top: 26px;
+}
+
+.orders .table-head .order-btn {
+    display: flex;
+    gap: 16px;
+}
+
+.orders .table-head .order-btn a {
+    background-color: #00CCF2;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: 300ms ease-in-out;
+    
+}
+.orders .table-head .order-btn a:hover{
+    opacity: 0.7;
+    box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.54);
+}
+.orders .order-table thead td {
+    font-size: 14;
+    font-weight: Bold;
+    line-height: 19px;
+    padding-left:75px ;
+
+}
+.orders .order-table tbody td {
+    border-top: 1px solid #272D3B;
+    padding: 19px 5px 12px 60px;
+}
+
+/* Costomizing the checkbox */
+input[type="checkbox"] {
+    display: none;
+  }
+  
+  label.ck-box {
+    position: relative;
+  }
+  
+  label.ck-box::before {
+    content: "";
+    background: url(../img/icons8-checkmark.svg);
+    background-position: center;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: -36px;
+    top: -12px;
+    cursor: pointer;
+    transform: scale(0) rotateZ(180deg);
+    transition: all 0.4s cubic-bezier(0.54, 0.01, 0, 1.49);
+    z-index: 100;
+}
+
+input[type="checkbox"]:checked +label.ck-box::before {
+    transform: scale(1) rotateZ(0deg);
+  }
+  
+  label.ck-box::after {
+    content: "";
+    border: 1px solid #272D3B;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: -26px;
+    top: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+  } 
+   
+
+/* Chart Section */
+.chart {
+    width:380px;
+    box-shadow: 0px 2px 4px 0px rgba(39, 45, 59, 0.74);
+    border-radius: 20px;
+    /* margin-left: 50px; */
+    padding: 30px 15px;
+    height: 380px;
+}
+
+.chart .chart-txt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.chart .chart-txt h2 {
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 35px;
+}
+/* the code below to costmize the pie chart */
+.pie {
+    max-width: 200px;
+    position: relative;
+    margin: 23px auto;
+
+}
+
+.pie .pie__frame {
+    stroke: #F5FBFF;
+    stroke-width: 2px;
+    fill: none;
+}
+
+.pie .pie__circle {
+    stroke: #00CCF2;
+    stroke-width: 2px;
+    stroke-linecap: round;
+    fill: #F5FBFF;
+
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    animation: pie-fill 2s reverse;
+    
+    /* [stroke-dasharray="0 100"] {
+      stroke: none;
+    } */
+}
+
+.pie .pie__canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+
+.pie .pie__text {
+    color: #272D3B;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 43px;
+    text-align: center; 
+    position: absolute; 
+    top: 50%; 
+    right: 0; 
+    left: 0; 
+    z-index: 3; 
+    transform: translateY(-50%);
+    animation: text-slideup 2s linear;
+}
+
+/* width: 18px; */
+
+@keyframes pie-fill {
+    to { 
+      stroke-dasharray: 0 100; 
+    }
+  }
+
+  @keyframes text-slideup {
+    from {
+      opacity: 0;
+      transform: translateY(0%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(-50%);
+    }
+}
+
+/* To customize the radio button in the chart section  */
+
+  
+/* .chart .group label {
+    margin-right: 35px;
+    font-size: 18px;
+    font-weight: 500px;
+    line-height: 24px;
+} */
+.chart input[type="radio"] {
+    opacity: 0;
+}
+
+.chart input[type="radio"] +label {
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500px;
+    line-height: 24px;
+}
+
+.chart input[type="radio"] +label::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 1px;
+    width: 20px;
+    height: 20px;
+    background-color: #93969D;
+    /* border: 1px solid #707070; */
+    border-radius: 100%;
+    transition: all 0.1s ease-in-out;
+}
+
+.chart input[type="radio"]:checked +label::before {
+    background: #00CCF2;
+    transform: scale(1);
+}
