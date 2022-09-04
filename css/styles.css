@@ -218,7 +218,7 @@ body {
 }
 .card1 {
     background: #FF007C;
-    height: 180px;
+/*     height: 180px; */
     border-radius: 20px;
     display: flex;
     flex-direction: column;
