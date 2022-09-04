@@ -175,6 +175,7 @@ body {
 .big-notification {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     box-shadow: 0px 1px 4px 0px rgba(39, 45, 59, 0.74);
     border-radius: 20px;
     margin-bottom: 35px;
