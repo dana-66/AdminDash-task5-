@@ -178,8 +178,7 @@ body {
     align-items: center;
     box-shadow: 0px 1px 4px 0px rgba(39, 45, 59, 0.74);
     border-radius: 20px;
-    margin-bottom: 35px;
-    
+    margin-bottom: 35px;    
 }
 .big-notification .notificaton-txt {
     padding-left: 30px;
@@ -219,7 +218,7 @@ body {
 }
 .card1 {
     background: #FF007C;
-/*     height: 180px; */
+    /* height: 180px; */
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -402,7 +401,7 @@ input[type="checkbox"]:checked +label.ck-box::before {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-top: 156px;
+    margin-top: 100px;
     margin-left: 264px;
 }
 
@@ -598,11 +597,11 @@ input[type="checkbox"]:checked +label.ck-box::before {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 156px;
+    margin-top: 117px;
 }
 
 .column-wrapper {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 90px;
+    /* margin-bottom: 90px; */
 }
